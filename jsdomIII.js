@@ -9,3 +9,21 @@ When the user clicks on a list item, it is removed
 Extra Credit: - When a list item is clicked, cross it out, then remove it after 1 second.
 */
 
+const form = document.querySelector("#toDoForm");
+const input = document.querySelector("input");
+const ul = document.querySelector("#list");
+
+function createLi(){
+const li = document.createElement ("li");
+const span = document.createElement('span');
+span.textContent = input.value;
+li.appendChild (span);
+
+return li;
+}
+
+form.addEventListener ("submit", (event) => {
+    event.preventDefault();
+    const li = createLi();
+    ul.appendChild(li);
+});

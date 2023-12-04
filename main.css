@@ -9,8 +9,8 @@ body {
   .container {
     margin: auto;
     padding: 1.5rem;
-    background-color: white;
-    border: solid 1px gray;
+    background-color: rgb(172, 225, 192);
+    border: solid 1px rgb(166, 155, 155);
     border-radius: 5px;
     box-shadow:
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
@@ -34,3 +34,6 @@ body {
     background-color: #16a039;
     cursor: pointer;
   }
+  #toDoForm {
+    margin: 20px 20px 20px 20px;
+}
