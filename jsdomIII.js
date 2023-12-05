@@ -15,7 +15,7 @@ const ul = document.querySelector("#list");
 
 function createLi(){
 const li = document.createElement ("li");
-const span = document.createElement('span');
+const span = document.createElement("span");
 span.textContent = input.value;
 li.appendChild (span);
 
@@ -26,4 +26,34 @@ form.addEventListener ("submit", (event) => {
     event.preventDefault();
     const li = createLi();
     ul.appendChild(li);
+    form.reset();
 });
+
+ul.addEventListener("click", function(e){
+    if(li = "click"){
+        e.target.parentElement.removeChild(e.target);
+    }
+    });
+    
+/*ul.addEventListener("click", function(e){
+        e.target.classList.add("myStyle");
+    });
+
+/*setTimeout(function myFunction3(){
+    ul.addEventListener("click", function(e){
+        if(li = "click"){
+            e.target.parentElement.removeChild(e.target);
+        }
+        });
+    }, 2000);
+
+   /* if(e.target.classlist = "myStyle"){
+        e.target.parentElement.removeChild(e.target);
+    }
+    */
+   /*let li = document.getElementById("item").children;
+let isClassPresent = li.classList.contains("myStyle");
+    if(isClassPresent){
+        e.target.parentElement.removeChild(e.target);
+    }
+    */

@@ -11,26 +11,26 @@
   <div class="container">
     <h1>Christmas To Do List:</h1>
     <ul id="list">
-      <li>
+      <li class="item">
         <span>Shop for presents</span></li>
-      <li>
+      <li class="item">
         <span>Cut down Christmas tree</span></li>
-      <li>
+      <li class = "item">
         <span>Go sledding</span></li>
-      <li>
+      <li class = "item">
         <span>Watch Hallmark movies</span></li>
-      <li>
+      <li class = "item">
         <span>Bake cookies</span></li>
    </ul>
   <form id="toDoForm">
       <div>
-        <input type="text" 
+        <input type="text" id ="EnterNewToDo" 
         placeholder="Enter New To Do" 
         name="EnterNewToDo"
         required />
       </div>
-      <button onclick = "addItem()" name ="submit" value = "submit">Add Item</button>
-  </form>
+      <button onclick = "addItem()" id ="btn" value = "submit">Add Item</button>
+    </form>
   </div> 
   <script src="jsdomIII.js"></script>
 </body>

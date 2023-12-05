@@ -36,4 +36,14 @@ body {
   }
   #toDoForm {
     margin: 20px 20px 20px 20px;
-}
+  }
+
+  #list{
+  cursor: pointer;
+  }
+
+  .myStyle {
+  text-decoration: line-through;
+  }
+
+  
