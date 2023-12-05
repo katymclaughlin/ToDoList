@@ -28,32 +28,11 @@ form.addEventListener ("submit", (event) => {
     ul.appendChild(li);
     form.reset();
 });
-
-ul.addEventListener("click", function(e){
-    if(li = "click"){
-        e.target.parentElement.removeChild(e.target);
-    }
-    });
     
-/*ul.addEventListener("click", function(e){
+ul.addEventListener("click", function(e){
+
         e.target.classList.add("myStyle");
-    });
-
-/*setTimeout(function myFunction3(){
-    ul.addEventListener("click", function(e){
-        if(li = "click"){
+        setTimeout(function myFunction3(e){
             e.target.parentElement.removeChild(e.target);
-        }
-        });
-    }, 2000);
-
-   /* if(e.target.classlist = "myStyle"){
-        e.target.parentElement.removeChild(e.target);
-    }
-    */
-   /*let li = document.getElementById("item").children;
-let isClassPresent = li.classList.contains("myStyle");
-    if(isClassPresent){
-        e.target.parentElement.removeChild(e.target);
-    }
-    */
+        }, 2000, e);
+    });
